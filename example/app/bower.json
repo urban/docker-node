@@ -1,0 +1,9 @@
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "normalize-css": "~3.0.0",
+    "font-awesome": "~4.0.3"
+  },
+  "devDependencies": {}
+}
