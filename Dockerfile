@@ -31,16 +31,12 @@ RUN      apt-get install -y git
 RUN      git config --global url."https://".insteadOf git://
 
 # install app
-RUN mkdir -p /opt/app
 ONBUILD ADD ./app /opt/app
 ONBUILD WORKDIR /opt/app
 ONBUILD RUN npm install
 
 # expose container
-EXPOSE 8000
-
-# set mount point
-VOLUME ["/opt/app"]
+EXPOSE 80
 
 # start
 CMD ["npm", "start"]
